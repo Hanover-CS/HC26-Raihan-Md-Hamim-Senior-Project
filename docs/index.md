@@ -4,35 +4,35 @@
 
 # CS461 Senior Seminar Proposal by MD Hamim Raihan– *Investor Follow App*
 
-## Project Title:
+1) Project Title:
 **InvestTrack: A Learning Tool to Follow Investors and Market Trends**
 
-## Description:
+2) Description:
 InvestTrack is a web application designed to help beginner and student investors learn how professional investors operate in the stock market. The app will allow users to view stock market data, track the current and past holdings of well-known investors, and follow their strategic changes over time. Unlike platforms like eToro or TipRanks, this app is geared toward **education**, not financial advice or real-time trading.
 
-## Purpose:
+3) Purpose:
 The goal of this project is to provide a **student-friendly and educational** tool that makes investment strategies easier to understand by following real investor behavior through publicly available data (e.g., SEC 13F filings). This app bridges the gap between abstract financial theory and real-world investment decision-making.
 
-## Key Features:
+4) Key Features:
 -  Stock market search: users can search any ticker and view current price, company info, and changes.
--  Investor profiles: view past vs. present portfolios of selected investors (e.g., Warren Buffett).
+-  Investor profiles: view past vs. present portfolios of selected investors (example: Warren Buffett).
 -  Follow system: users can "follow" investors and view their portfolio dashboard.
 -  Portfolio visualization: simple charts and comparisons for better learning.
 
-## Technologies & Tools:
+5) Technologies & Tools:
 - Frontend: React.js (Vite or Create React App)
 - Backend: Node.js (Express) or Firebase for quick MVP
 - APIs: Alpha Vantage (for stock data), public 13F filings (or Whalewisdom)
 - Database: Firebase or PostgreSQL (to store followed investors, saved stocks)
 
-## Deliverables:
+6) Deliverables:
 - Working web app with core features
 - GitHub repo with version control and commits
 - Published project site using GitHub Pages and Jekyll
 - Final presentation with demo + learning reflection
 
 
-## Timeline:
+7) Timeline:
 
 | Week | Milestone                              |
 |------|----------------------------------------|
