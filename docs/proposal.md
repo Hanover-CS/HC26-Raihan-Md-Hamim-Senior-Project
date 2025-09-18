@@ -37,7 +37,11 @@ While these platforms are built for active investors or professionals, **InvestT
 - **APIs:** Alpha Vantage (for stock data), public 13F filings (or Whalewisdom)
 - **Database:** Firebase or PostgreSQL (to store followed investors, saved stocks)
 
-4) Deliverables:
+4)Learning Load
+
+This project involves learning several new technologies and tools. I’ve used some basic JavaScript before, but React (with Vite or Create React App) will be new, especially JSX and component structure. I haven’t worked with APIs like Alpha Vantage or SEC 13F data before, so learning how to fetch and parse that data will be part of the challenge. If I use Firebase, I’ll need to learn how to set up real-time databases and authentication. Jekyll and GitHub Pages are also new to me, so deploying the site and managing updates using GitHub Actions will require exploration. Overall, this project will help me build full-stack skills, improve my Git/GitHub workflow, and get hands-on experience with real-world data.
+
+5) Deliverables:
 - Working web app with core features
 - GitHub repo with version control and commits
 - Published project site using GitHub Pages and Jekyll
@@ -58,7 +62,6 @@ While these platforms are built for active investors or professionals, **InvestT
 ## Why this Project you choose?
 As someone passionate about technology, finance, and education, I believe that InvestTrack can become a valuable resource for fellow students who want to better understand investing. It’s practical, scalable, and encourages real-world learning without the risk of live trading. Help investor as beginner.
 
-## References
 
 ## References
 
