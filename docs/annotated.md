@@ -42,3 +42,28 @@ eToro enables users to copy the trades of successful investors in real time. It�
 **Relation to App:** Core tool for stock data  
 **Annotation:**  
 Alpha Vantage provides free APIs for real-time and historical market data. It’s well-documented and beginner-accessible, making it ideal for educational apps. I plan to use this API to power my stock search and price display features, giving users current prices and basic financial metrics. It will be key for integrating real stock info without needing a paid data plan.
+---
+
+## Technologies
+
+**Target Platform:**  
+Web application — accessible to both mobile and desktop users without installing anything.
+
+**Programming Language(s):**  
+- JavaScript (React/Node): Most likely choice. Easy to deploy. Lots of tutorials.  
+- Python (Flask): Easier for backend, but less frontend support.  
+- Java: Overkill for this app; deployment more complex.
+
+**Frameworks & Libraries:**  
+- **Frontend:** React (JS framework for UI), Chart.js (for graphs)  
+- **Backend:** Node.js with Express, or Python Flask  
+- **Data APIs:** Alpha Vantage (for stock data), SEC EDGAR (13F filings)
+
+**Why This Stack?**  
+React + Node is beginner-friendly, has strong community support, and integrates well with GitHub Pages + Netlify for deployment.
+
+**New Stuff I’ll Need to Learn:**  
+- REST APIs (fetching/parsing JSON data)  
+- Using Chart libraries  
+- Hosting frontend + backend (Netlify, Vercel, or Render)  
+- Possibly MongoDB or Firebase for saving user data
