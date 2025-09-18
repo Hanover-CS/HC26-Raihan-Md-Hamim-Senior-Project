@@ -20,14 +20,24 @@ The goal of this project is to provide a **student-friendly and educational** to
 -  Investor profiles: view past vs. present portfolios of selected investors (e.g., Warren Buffett).
 -  Follow system: users can "follow" investors and view their portfolio dashboard.
 -  Portfolio visualization: simple charts and comparisons for better learning.
+2)## Similar Solutions
 
-2) Technologies & Tools:
+Several existing platforms offer stock tracking or investor-following features:
+
+- **TipRanks** – Provides stock analysis, analyst ratings, and top investor portfolios, but requires a subscription for most data.
+- **eToro** – A social trading platform that allows users to copy trades from other investors, but is focused on real-time trading.
+- **WhaleWisdom** – Focuses on SEC 13F filings, letting users follow institutional investors. It is data-heavy and not very beginner-friendly.
+
+While these platforms are built for active investors or professionals, **InvestTrack** is designed for **students and beginners**. Its goal is **education**, not financial advice or active trading. It simplifies complex financial data into digestible insights and encourages learning through exploration, not speculation.
+
+
+3) Technologies & Tools:
 - **Frontend:** React.js (Vite or Create React App)
 - **Backend:** Node.js (Express) or Firebase for quick MVP
 - **APIs:** Alpha Vantage (for stock data), public 13F filings (or Whalewisdom)
 - **Database:** Firebase or PostgreSQL (to store followed investors, saved stocks)
 
-3) Deliverables:
+4) Deliverables:
 - Working web app with core features
 - GitHub repo with version control and commits
 - Published project site using GitHub Pages and Jekyll
@@ -47,5 +57,13 @@ The goal of this project is to provide a **student-friendly and educational** to
 
 ## Why this Project you choose?
 As someone passionate about technology, finance, and education, I believe that InvestTrack can become a valuable resource for fellow students who want to better understand investing. It’s practical, scalable, and encourages real-world learning without the risk of live trading. Help investor as beginner.
+
+## References
+
+[1] U.S. Securities and Exchange Commission. “SEC Form 13F.” [Online]. Available: https://www.sec.gov/forms/form13f  
+[2] Alpha Vantage Inc. “Stock APIs.” [Online]. Available: https://www.alphavantage.co/  
+[3] WhaleWisdom. “Hedge Fund Holdings and 13F Filings.” [Online]. Available: https://whalewisdom.com/  
+[4] TipRanks. “Analyst Ratings & Financial Tools.” [Online]. Available: https://www.tipranks.com/  
+[5] GitHub Docs. “GitHub Pages and Jekyll.” [Online]. Available: https://docs.github.com/en/pages
 
 
