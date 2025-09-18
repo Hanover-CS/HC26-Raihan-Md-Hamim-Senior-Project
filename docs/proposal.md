@@ -60,10 +60,16 @@ As someone passionate about technology, finance, and education, I believe that I
 
 ## References
 
-[1] U.S. Securities and Exchange Commission. “SEC Form 13F.” [Online]. Available: https://www.sec.gov/forms/form13f  
-[2] Alpha Vantage Inc. “Stock APIs.” [Online]. Available: https://www.alphavantage.co/  
-[3] WhaleWisdom. “Hedge Fund Holdings and 13F Filings.” [Online]. Available: https://whalewisdom.com/  
-[4] TipRanks. “Analyst Ratings & Financial Tools.” [Online]. Available: https://www.tipranks.com/  
-[5] GitHub Docs. “GitHub Pages and Jekyll.” [Online]. Available: https://docs.github.com/en/pages
+## References
+
+[1] U.S. Securities and Exchange Commission, “EDGAR - Search Tools,” [Online]. Available: https://www.sec.gov/edgar/search/.
+
+[2] WhaleWisdom, “13F Filings, Hedge Fund Holdings, and Mutual Fund Ownership,” [Online]. Available: https://whalewisdom.com.
+
+[3] TipRanks, “Stock Analysis and Portfolio Tools,” [Online]. Available: https://www.tipranks.com.
+
+[4] eToro, “Social Trading Platform,” [Online]. Available: https://www.etoro.com.
+
+[5] Alpha Vantage, “Stock APIs for Realtime and Historical Market Data,” [Online]. Available: https://www.alphavantage.co. 
 
 
