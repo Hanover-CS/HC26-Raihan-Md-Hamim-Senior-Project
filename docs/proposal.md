@@ -1,5 +1,10 @@
 ---
 ---
+---
+layout: default
+title: Proposal
+---
+
 # CS461 Senior Seminar Proposal – *Investor Follow App*
 
 # Project Title:
