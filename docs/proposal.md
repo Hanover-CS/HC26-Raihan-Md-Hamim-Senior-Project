@@ -20,7 +20,9 @@ The goal of this project is to provide a **student-friendly and educational** to
 -  Investor profiles: view past vs. present portfolios of selected investors (e.g., Warren Buffett).
 -  Follow system: users can "follow" investors and view their portfolio dashboard.
 -  Portfolio visualization: simple charts and comparisons for better learning.
-2)## Similar Solutions
+
+   
+2)Similar Solutions
 
 Several existing platforms offer stock tracking or investor-following features:
 
