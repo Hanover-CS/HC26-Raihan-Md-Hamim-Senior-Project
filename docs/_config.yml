@@ -1,0 +1,14 @@
+title: "InvestTrack"
+description: "A Learning Tool to Follow Investors and Market Trends"
+baseurl: "/HC26-Raihan-Md-Hamim-Senior-Project"
+url: "" # GitHub Pages fills this
+
+remote_theme: pages-themes/cayman
+
+plugins:
+  - jekyll-relative-links
+  - jekyll-remote-theme
+
+relative_links:
+  enabled: true
+  collections: true

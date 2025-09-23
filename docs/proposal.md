@@ -1,8 +1,6 @@
 ---
-layout: default
-title: Proposal
+title: CS461 Senior Seminar Proposal
 ---
-
 
 # CS461 Senior Seminar Proposal – *Investor Follow App*
 
@@ -38,6 +36,8 @@ While these platforms are built for active investors or professionals, **InvestT
 - **Backend:** Node.js (Express) or Firebase for quick MVP
 - **APIs:** Alpha Vantage (for stock data), public 13F filings (or Whalewisdom)
 - **Database:** Firebase or PostgreSQL (to store followed investors, saved stocks)
+
+
 
 4)Learning Load
 
@@ -76,5 +76,8 @@ As someone passionate about technology, finance, and education, I believe that I
 [4] eToro, “Social Trading Platform,” [Online]. Available: https://www.etoro.com.
 
 [5] Alpha Vantage, “Stock APIs for Realtime and Historical Market Data,” [Online]. Available: https://www.alphavantage.co. 
+
+
+
 
 
