@@ -102,5 +102,3 @@ As someone passionate about **technology**, **finance**, and **education**, I be
 \[7] Google Firebase, “Firebase Realtime Database Documentation,” *[https://firebase.google.com/docs/database](https://firebase.google.com/docs/database)*
 
 ---
-
-*Markdown syntax is used with bold text, italics, and headers. Alternative technologies are discussed. In-text references are aligned with the rubric.*
