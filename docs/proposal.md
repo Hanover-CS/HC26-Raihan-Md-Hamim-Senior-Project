@@ -1,4 +1,4 @@
-
+---
 
 layout: default
 title: Proposal
@@ -105,5 +105,3 @@ As someone passionate about **technology**, **finance**, and **education**, I be
 ---
 
 *Markdown syntax is used with bold text, italics, and headers. Alternative technologies are discussed. In-text references are aligned with the rubric.*
-
-
