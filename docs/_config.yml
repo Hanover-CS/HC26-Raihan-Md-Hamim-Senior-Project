@@ -1,7 +1,7 @@
 title: "InvestTrack"
 description: "A Learning Tool to Follow Investors and Market Trends"
 baseurl: "/HC26-Raihan-Md-Hamim-Senior-Project"
-url: "" # GitHub Pages fills this
+url: "" 
 
 remote_theme: pages-themes/cayman
 
