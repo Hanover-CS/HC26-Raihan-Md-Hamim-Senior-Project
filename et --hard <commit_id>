@@ -1,0 +1,37 @@
+[33m8267057[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Remove Gemfile to use default GitHub Pages environment
+[33md986591[m Trigger rebuild
+[33ma5667f5[m Switch to github-pages gem for GitHub Pages compatibility
+[33mce446c2[m Switch to custom layout with navbar
+[33me1abaec[m Add custom default.html layout with navbar
+[33m29b9f32[m Fix front matter and update pages
+[33m5482155[m Add layout front matter to pages
+[33m49f3cf3[m Fix _config.yml baseurl and url for GitHub Pages
+[33m3136905[m Fix _config.yml baseurl and url for GitHub Pages
+[33m9a0b494[m Add index.md for GitHub Pages
+[33mac360fe[m Fixed some error inindex.md
+[33m6e20154[m Fixed some grammer error in proposal.md
+[33mf671495[m Fix proposal formatting and add link from homepage
+[33md5f34ae[m Merge branch 'main' of https://github.com/Hanover-CS/HC26-Raihan-Md-Hamim-Senior-Project
+[33mb138170[m I modify the proposal
+[33m59195fd[m I wokred on config
+[33m9cc9595[m I moved gitignore outside of docs and deleted index file and propsal html
+[33m62717b1[m Update proposal.md
+[33m9a1ddd1[m Update proposal.md
+[33m9906f86[m Update proposal.md
+[33m6a08f45[m Update proposal.md
+[33m67c4445[m Update proposal.md
+[33mb349a84[m Update proposal.md
+[33m905c7d4[m Add Technologies section
+[33mce22435[m Add fully annotated bibliography entries
+[33m6a3c57c[m Update proposal.md
+[33m61cf71c[m I added about learning lead
+[33mcf728e2[m Update links
+[33m50f4118[m Add Similar Solutions and References section to proposal.md
+[33m2ef19ac[m Update proposal.md
+[33m14fe5ba[m Update proposal.md
+[33m468772a[m Remove Unnessary spaces and lines from deploy.yml
+[33md57ff78[m I fixed the TimeLine and maybe  I might change some if it needed.
+[33m91f2a9b[m Add full proposal as homepage index.md
+[33m538ab34[m Add Pages deploy workflow
+[33ma6463da[m I modify some lines
+[33m8585ae9[m Initial commit
