@@ -9,3 +9,4 @@ This site hosts my project documentation.
 
 - [Proposal](proposal.md)
 - [Annotated Bibliography](annotated.md)
+
