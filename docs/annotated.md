@@ -1,5 +1,5 @@
 ---
-
+layout: default
 title: Annotated Bibliography
 ---
 # Annotated Bibliography
