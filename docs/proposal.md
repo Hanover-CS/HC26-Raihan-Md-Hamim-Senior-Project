@@ -62,6 +62,24 @@ This means I’ll not only learn new tools, but also understand why simpler, stu
 - Final presentation with demo + learning reflection  
 
 ## Timeline (subject to adjustment)
+![Timeline Chart](assets/timeline.png)
+<canvas id="timelineChart"></canvas>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+  const ctx = document.getElementById('timelineChart').getContext('2d');
+  new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Week 1','Week 2','Week 3','Week 4','Week 5','Week 6','Week 7','Week 8'],
+      datasets: [{
+        label: 'Milestones',
+        data: [1,2,3,4,5,6,7,8],
+        backgroundColor: 'rgba(75, 192, 192, 0.6)'
+      }]
+    }
+  });
+</script>
+
 | Week | Milestone |
 |------|-----------|
 | 1    | Finalize idea, design UI mockups, repo setup |
