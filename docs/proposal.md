@@ -78,15 +78,20 @@ This means I’ll not only learn new tools, but also understand why simpler, stu
 ## Why This Project?
 As someone passionate about technology, finance, and education, I believe that InvestTrack can become a valuable resource for fellow students who want to better understand investing. It’s practical, scalable, and encourages real-world learning without the risk of live trading. The focus is on helping beginners grow their knowledge.
 
-## References
-[1] U.S. Securities and Exchange Commission, “EDGAR - Search Tools,” [Online]. Available: [https://www.sec.gov/edgar/search/](https://www.sec.gov/edgar/search/).
+## References and Comparisons  
 
+[1] U.S. Securities and Exchange Commission, “EDGAR - Search Tools,” [Online]. Available: [https://www.sec.gov/edgar/search/](https://www.sec.gov/edgar/search/).  
+➡️ *Comparison*: EDGAR provides raw 13F filing data directly from the SEC. It is accurate but not user-friendly for beginners. **InvestTrack** will use this data but simplify it with visual dashboards so students don’t have to parse dense reports.  
 
-[2] WhaleWisdom, “13F Filings, Hedge Fund Holdings, and Mutual Fund Ownership,” [Online]. Available: [https://whalewisdom.com](https://whalewisdom.com).
+[2] WhaleWisdom, “13F Filings, Hedge Fund Holdings, and Mutual Fund Ownership,” [Online]. Available: [https://whalewisdom.com](https://whalewisdom.com).  
+➡️ *Comparison*: WhaleWisdom organizes and analyzes institutional holdings, but it is data-heavy and geared toward professional analysts. **InvestTrack** instead focuses on *education* by breaking the same data into beginner-friendly charts and summaries.  
 
-[3] TipRanks, “Stock Analysis and Portfolio Tools,” [Online]. Available: [https://www.tipranks.com](https://www.tipranks.com).
+[3] TipRanks, “Stock Analysis and Portfolio Tools,” [Online]. Available: [https://www.tipranks.com](https://www.tipranks.com).  
+➡️ *Comparison*: TipRanks shows analyst ratings, stock performance, and investor portfolios. However, most features require a subscription. **InvestTrack** will remain free for students, emphasizing *learning outcomes* rather than premium insights.  
 
-[4] eToro, “Social Trading Platform,” [Online]. Available: [https://www.etoro.com](https://www.etoro.com).
+[4] eToro, “Social Trading Platform,” [Online]. Available: [https://www.etoro.com](https://www.etoro.com).  
+➡️ *Comparison*: eToro lets users copy trades in real time, but this encourages speculation and involves financial risk. **InvestTrack** deliberately avoids trading — it provides *educational tracking only*, so students can learn strategies safely.  
 
-[5] Alpha Vantage, “Stock APIs for Realtime and Historical Market Data,” [Online]. Available: [https://www.alphavantage.co](https://www.alphavantage.co).
+[5] Alpha Vantage, “Stock APIs for Realtime and Historical Market Data,” [Online]. Available: [https://www.alphavantage.co](https://www.alphavantage.co).  
+➡️ *Comparison*: Alpha Vantage offers free stock data APIs. **InvestTrack** will use Alpha Vantage for stock search and visualization but integrate it with investor-following features to create a more holistic educational tool.  
 
