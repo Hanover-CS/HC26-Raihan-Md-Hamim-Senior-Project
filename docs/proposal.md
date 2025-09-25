@@ -79,10 +79,13 @@ This means I’ll not only learn new tools, but also understand why simpler, stu
 As someone passionate about technology, finance, and education, I believe that InvestTrack can become a valuable resource for fellow students who want to better understand investing. It’s practical, scalable, and encourages real-world learning without the risk of live trading. The focus is on helping beginners grow their knowledge.
 
 ## References
-[1] U.S. Securities and Exchange Commission, “EDGAR - Search Tools,” [Online]. Available: https://www.sec.gov/edgar/search/.  
-[2] WhaleWisdom, “13F Filings, Hedge Fund Holdings, and Mutual Fund Ownership,” [Online]. Available: https://whalewisdom.com.  
-[3] TipRanks, “Stock Analysis and Portfolio Tools,” [Online]. Available: https://www.tipranks.com.  
-[4] eToro, “Social Trading Platform,” [Online]. Available: https://www.etoro.com.  
-[5] Alpha Vantage, “Stock APIs for Realtime and Historical Market Data,” [Online]. Available: https://www.alphavantage.co.  
+[1] U.S. Securities and Exchange Commission, “EDGAR - Search Tools,” [Online]. Available: <https://www.sec.gov/edgar/search/>.
 
+[2] WhaleWisdom, “13F Filings, Hedge Fund Holdings, and Mutual Fund Ownership,” [Online]. Available: <https://whalewisdom.com>.
+
+[3] TipRanks, “Stock Analysis and Portfolio Tools,” [Online]. Available: <https://www.tipranks.com>.
+
+[4] eToro, “Social Trading Platform,” [Online]. Available: <https://www.etoro.com>.
+
+[5] Alpha Vantage, “Stock APIs for Realtime and Historical Market Data,” [Online]. Available: <https://www.alphavantage.co>.
 
