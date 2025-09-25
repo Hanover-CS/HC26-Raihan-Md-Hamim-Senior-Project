@@ -78,7 +78,7 @@ This means I’ll not only learn new tools, but also understand why simpler, stu
 ## Why This Project?
 As someone passionate about technology, finance, and education, I believe that InvestTrack can become a valuable resource for fellow students who want to better understand investing. It’s practical, scalable, and encourages real-world learning without the risk of live trading. The focus is on helping beginners grow their knowledge.
 
-## References and Comparisons
+References and Comparisons
 
 [1] U.S. Securities and Exchange Commission, “EDGAR - Search Tools,” [Online]. Available: https://www.sec.gov/edgar/search/
 .
