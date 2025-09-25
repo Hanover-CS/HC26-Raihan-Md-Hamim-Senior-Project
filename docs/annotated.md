@@ -1,3 +1,7 @@
+---
+layout: default
+title: Annotated Bibliography
+---
 # Annotated Bibliography
 
 ## [1] U.S. Securities and Exchange Commission – “EDGAR – Search Tools”  
