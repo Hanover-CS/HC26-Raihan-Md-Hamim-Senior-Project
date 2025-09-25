@@ -3,7 +3,8 @@ description: "A Learning Tool to Follow Investors and Market Trends"
 baseurl: "/HC26-Raihan-Md-Hamim-Senior-Project"
 url: ""
 
-remote_theme: pages-themes/cayman
+theme: null
+
 
 plugins:
   - jekyll-relative-links
