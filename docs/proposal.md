@@ -62,34 +62,48 @@ This means I’ll not only learn new tools, but also understand why simpler, stu
 - Final presentation with demo + learning reflection  
 
 ## Timeline (subject to adjustment)
-![Timeline Chart](assets/timeline.png)
-<canvas id="timelineChart"></canvas>
+
+<canvas id="timelineChart" width="400" height="200"></canvas>
+
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
-  const ctx = document.getElementById('timelineChart').getContext('2d');
-  new Chart(ctx, {
-    type: 'bar',
-    data: {
-      labels: ['Week 1','Week 2','Week 3','Week 4','Week 5','Week 6','Week 7','Week 8'],
-      datasets: [{
-        label: 'Milestones',
-        data: [1,2,3,4,5,6,7,8],
-        backgroundColor: 'rgba(75, 192, 192, 0.6)'
-      }]
-    }
+  document.addEventListener("DOMContentLoaded", function() {
+    const ctx = document.getElementById('timelineChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: [
+          'Week 1: UI Mockups',
+          'Week 2: API Integration',
+          'Week 3: Investor Profiles',
+          'Week 4: Dashboard',
+          'Week 5: UI Polish',
+          'Week 6: 13F Data',
+          'Week 7: Final Report',
+          'Week 8: Presentation'
+        ],
+        datasets: [{
+          label: 'Timeline',
+          data: [1,2,3,4,5,6,7,8],
+          backgroundColor: 'rgba(54, 162, 235, 0.6)',
+          borderColor: 'rgba(54, 162, 235, 1)',
+          borderWidth: 1
+        }]
+      },
+      options: {
+        scales: {
+          y: {
+            beginAtZero: true,
+            ticks: {
+              stepSize: 1
+            }
+          }
+        }
+      }
+    });
   });
 </script>
 
-| Week | Milestone |
-|------|-----------|
-| 1    | Finalize idea, design UI mockups, repo setup |
-| 2    | Implement stock search with API integration |
-| 3    | Build static investor profiles from JSON |
-| 4    | Add follow feature + dashboard |
-| 5    | Polish UI, add charting |
-| 6    | Add real data from 13F or APIs |
-| 7    | Write final report, create slides |
-| 8    | Final polish + present project and describe everything |
 
 ## Why This Project?
 As someone passionate about technology, finance, and education, I believe that InvestTrack can become a valuable resource for fellow students who want to better understand investing. It’s practical, scalable, and encourages real-world learning without the risk of live trading. The focus is on helping beginners grow their knowledge.
