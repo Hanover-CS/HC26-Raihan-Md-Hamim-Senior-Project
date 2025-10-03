@@ -94,12 +94,34 @@ As someone passionate about technology, finance, and education, I believe that I
 
 [5] Alpha Vantage, “Stock APIs for Realtime and Historical Market Data,” [Online]. Available: [https://www.alphavantage.co](https://www.alphavantage.co).  
 ➡️ *Comparison*: Alpha Vantage offers free stock data APIs. **InvestTrack** will use Alpha Vantage for stock search and visualization but integrate it with investor-following features to create a more holistic educational tool.  
-Software / Tools References:
-[6] React.js, “React – A JavaScript Library for Building User Interfaces,” Meta Platforms, 2025. [Online]. Available: https://react.dev.
-[7] Vite.js, “Vite – Next Generation Frontend Tooling,” 2025. [Online]. Available: https://vitejs.de.
-[8] Node.js Foundation, “Node.js,” OpenJS Foundation, 2025. [Online]. Available: https://nodejs.org.
-[9] Express.js, “Express – Fast, Unopinionated, Minimalist Web Framework for Node.js,” OpenJS Foundation, 2025. [Online]. Available: https://expressjs.com.
-[10] Firebase, “Firebase Documentation,” Google, 2025. [Online]. Available: https://firebase.google.com.
-[11] GitHub, “GitHub Pages Documentation,” 2025. [Online]. Available: https://pages.github.com.
-[12] Netlify, “Netlify Documentation,” 2025. [Online]. Available: https://www.netlify.com.
-[13] Jekyll, “Jekyll – Simple, Blog-Aware, Static Sites,” 2025. [Online]. Available: https://jekyllrb.com.
+## References and Comparisons  
+
+[1] U.S. Securities and Exchange Commission, “EDGAR - Search Tools,” [Online]. Available: [https://www.sec.gov/edgar/search/](https://www.sec.gov/edgar/search/).  
+
+[2] WhaleWisdom, “13F Filings, Hedge Fund Holdings, and Mutual Fund Ownership,” [Online]. Available: [https://whalewisdom.com](https://whalewisdom.com).  
+
+[3] TipRanks, “Stock Analysis and Portfolio Tools,” [Online]. Available: [https://www.tipranks.com](https://www.tipranks.com).  
+
+[4] eToro, “Social Trading Platform,” [Online]. Available: [https://www.etoro.com](https://www.etoro.com).  
+
+[5] Alpha Vantage, “Stock APIs for Realtime and Historical Market Data,” [Online]. Available: [https://www.alphavantage.co](https://www.alphavantage.co).  
+
+---
+
+### Software / Tools References  
+
+[6] React.js, “React – A JavaScript Library for Building User Interfaces,” Meta Platforms, 2025. [Online]. Available: [https://react.dev](https://react.dev).  
+
+[7] Vite.js, “Vite – Next Generation Frontend Tooling,” 2025. [Online]. Available: [https://vitejs.dev](https://vitejs.dev).  
+
+[8] Node.js Foundation, “Node.js,” OpenJS Foundation, 2025. [Online]. Available: [https://nodejs.org](https://nodejs.org).  
+
+[9] Express.js, “Express – Fast, Unopinionated, Minimalist Web Framework for Node.js,” OpenJS Foundation, 2025. [Online]. Available: [https://expressjs.com](https://expressjs.com).  
+
+[10] Firebase, “Firebase Documentation,” Google, 2025. [Online]. Available: [https://firebase.google.com](https://firebase.google.com).  
+
+[11] GitHub, “GitHub Pages Documentation,” 2025. [Online]. Available: [https://pages.github.com](https://pages.github.com).  
+
+[12] Netlify, “Netlify Documentation,” 2025. [Online]. Available: [https://www.netlify.com](https://www.netlify.com).  
+
+[13] Jekyll, “Jekyll – Simple, Blog-Aware, Static Sites,” 2025. [Online]. Available: [https://jekyllrb.com](https://jekyllrb.com).  
