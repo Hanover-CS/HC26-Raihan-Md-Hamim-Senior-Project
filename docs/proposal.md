@@ -94,4 +94,12 @@ As someone passionate about technology, finance, and education, I believe that I
 
 [5] Alpha Vantage, “Stock APIs for Realtime and Historical Market Data,” [Online]. Available: [https://www.alphavantage.co](https://www.alphavantage.co).  
 ➡️ *Comparison*: Alpha Vantage offers free stock data APIs. **InvestTrack** will use Alpha Vantage for stock search and visualization but integrate it with investor-following features to create a more holistic educational tool.  
-
+Software / Tools References:
+[6] React.js, “React – A JavaScript Library for Building User Interfaces,” Meta Platforms, 2025. [Online]. Available: https://react.dev.
+[7] Vite.js, “Vite – Next Generation Frontend Tooling,” 2025. [Online]. Available: https://vitejs.de.
+[8] Node.js Foundation, “Node.js,” OpenJS Foundation, 2025. [Online]. Available: https://nodejs.org.
+[9] Express.js, “Express – Fast, Unopinionated, Minimalist Web Framework for Node.js,” OpenJS Foundation, 2025. [Online]. Available: https://expressjs.com.
+[10] Firebase, “Firebase Documentation,” Google, 2025. [Online]. Available: https://firebase.google.com.
+[11] GitHub, “GitHub Pages Documentation,” 2025. [Online]. Available: https://pages.github.com.
+[12] Netlify, “Netlify Documentation,” 2025. [Online]. Available: https://www.netlify.com.
+[13] Jekyll, “Jekyll – Simple, Blog-Aware, Static Sites,” 2025. [Online]. Available: https://jekyllrb.com.
