@@ -1,11 +1,21 @@
-# 01 — Setup & Run Locally
+---
+layout: default
+title: Step 1 - Setup and Run Locally
+---
 
-**Goal:** Create a React app with Vite and run it locally.
+# Step 1: Setup and Run Locally
 
-## Steps
+This step helps you create a new React app with **Vite** and run it locally.
+
+## Prerequisites
+- Install [Node.js](https://nodejs.org/)
+- Install [Git](https://git-scm.com/)
+- Have a GitHub account
+
+## Commands
 
 ```bash
-# from repo root
+npm create vite@latest investtrack-frontend -- --template react
 cd investtrack-frontend
 npm install
 npm run dev

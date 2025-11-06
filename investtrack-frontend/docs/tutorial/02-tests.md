@@ -1,20 +1,24 @@
 
 ---
 
-### `docs/tutorial/02-tests.md`
+####  02-tests.md
 ```markdown
-# 02 — Add a Test & Run It
+---
+layout: default
+title: Step 2 - Add and Run Tests
+---
 
-**Goal:** Add a simple unit test with Vitest and make it pass.
+# Step 2: Add and Run Tests
 
-We already installed testing deps and added a sample test at `src/example.test.jsx`:
+We’ll use [Vitest](https://vitest.dev/) for testing.
+
+## Write a Test
+Inside `src/example.test.jsx`, add:
 
 ```jsx
-// src/example.test.jsx
-import { describe, it, expect } from 'vitest';
+import { test, expect } from 'vitest';
 
-describe('Simple math test', () => {
-  it('adds correctly', () => {
-    expect(2 + 3).toBe(5);
-  });
+test('adds numbers correctly', () => {
+  expect(2 + 3).toBe(5);
 });
+
