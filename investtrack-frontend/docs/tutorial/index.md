@@ -30,10 +30,16 @@ title: InvestTrack Tutorial — Index
 - Repo cloned locally or Codespaces opened
 
 ## See Also
-- [Vite Documentation](https://vitejs.dev/)
+- [Vite Documentation](https://vitejs.dev/guide/)
 - [React Docs](https://react.dev/learn)
 - [Vitest Docs](https://vitest.dev/)
 - [GitHub Actions Docs](https://docs.github.com/en/actions)
+## Summary
+By completing this tutorial, you learned to:
+- Run a React + Vite project locally
+- Write and pass tests with Vitest
+- Automate testing using GitHub Actions
+- Optionally deploy your site to GitHub Pages
 
 ## Screenshots
 
