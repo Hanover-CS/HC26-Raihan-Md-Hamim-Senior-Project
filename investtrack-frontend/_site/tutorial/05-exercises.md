@@ -1,5 +1,9 @@
 
 ---
+
+####  05-exercises.md
+```markdown
+---
 layout: default
 title: Step 5 - Practice Exercises
 ---
@@ -15,7 +19,6 @@ Add a **new test** to `example.test.jsx` that multiplies two numbers.
 test('multiplies numbers correctly', () => {
   expect(2 * 3).toBe(6);
 });
-```
 
 ---
 
@@ -27,7 +30,4 @@ test('divides numbers correctly', () => {
   const result = 6 / 2;
   expect(result).toBe(3);
 });
-```
-[← Previous: Deploy](04-deploy.md) | [Back to Index](index.md)
-
 

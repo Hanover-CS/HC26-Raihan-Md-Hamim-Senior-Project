@@ -1,7 +1,11 @@
-import { describe, it, expect } from 'vitest'
+import { test, expect } from 'vitest';
 
-describe('Simple math test', () => {
-  it('adds correctly', () => {
-    expect(2 + 3).toBe(5)
-  })
-})
+test('multiplies correctly', () => {
+  const result = 4 * 2;
+  expect(result).toBe(8);
+});
+
+test('divides numbers correctly', () => {
+  const result = 6 / 2;
+  expect(result).toBe(3);
+});

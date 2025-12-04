@@ -21,9 +21,6 @@ import { test, expect } from 'vitest';
 test('adds numbers correctly', () => {
   expect(2 + 3).toBe(5);
 });
-```
-<img src="app-running.png" width="450">
-<img src="tests-passing.png" width="450">
-[← Previous: Setup](01-setup.md) | [Next → CI with GitHub Actions](03-ci.md)
-
+![App Running](assets/app-running.png)
+![Tests Passing](assets/test-passing.png)
 

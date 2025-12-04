@@ -22,6 +22,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <Route path="/" element={<App />} />
       <Route path="/proposal" element={<Proposal />} />
       <Route path="/annotated" element={<AnnotatedBibliography />} />
+     
     </Routes>
   </BrowserRouter>
 );

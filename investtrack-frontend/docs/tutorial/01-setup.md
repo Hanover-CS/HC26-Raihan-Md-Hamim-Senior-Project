@@ -19,3 +19,9 @@ npm create vite@latest investtrack-frontend -- --template react
 cd investtrack-frontend
 npm install
 npm run dev
+```
+
+<img src="app-running.png" width="450">
+<img src="tests-passing.png" width="450">
+[Next → Add a Test](02-tests.md)
+
