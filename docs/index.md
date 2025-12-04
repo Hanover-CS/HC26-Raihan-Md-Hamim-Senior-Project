@@ -9,5 +9,5 @@ This site hosts my project documentation.
 
 - [Proposal](proposal.md)
 - [Annotated Bibliography](annotated.md)
-- [InvestTrack Tutorial](investtrack-frontend/docs/tutorial/)
+- [InvestTrack Tutorial](/HC26-Raihan-Md-Hamim-Senior-Project/investtrack-frontend/docs/tutorial/)
 
