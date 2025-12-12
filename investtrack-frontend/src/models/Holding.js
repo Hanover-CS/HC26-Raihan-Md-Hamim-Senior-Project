@@ -1,14 +1,12 @@
 /**
  * File: Holding.js
- * Purpose: Model class representing a single holding row (investor + ticker + shares).
+ * Purpose: Model class representing a single investor holding entry.
  */
-
 export default class Holding {
-  constructor({ investor, ticker, shares, sector }) {
+  constructor({ investor, ticker, shares }) {
     this.investor = investor;
     this.ticker = ticker;
     this.shares = shares;
-    this.sector = sector ?? "Unknown";
   }
 
   matchesQuery(query) {
@@ -19,9 +17,5 @@ export default class Holding {
       this.investor.toLowerCase().includes(q) ||
       this.ticker.toLowerCase().includes(q)
     );
-  }
-
-  key() {
-    return `${this.investor}__${this.ticker}`;
   }
 }
