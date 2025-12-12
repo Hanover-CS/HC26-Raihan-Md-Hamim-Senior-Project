@@ -1,34 +1,51 @@
 /**
  * File: App.jsx
- * Purpose: Main page UI; holds search state and renders SearchBar + Results.
+ * Purpose: Home page for InvestTrack. Provides search over holdings and shows results + details.
  */
 
 import { useMemo, useState } from "react";
+import NavBar from "./components/NavBar";
 import SearchBar from "./components/SearchBar";
 import Results from "./components/Results";
+import HoldingDetails from "./components/HoldingDetails";
 import { SAMPLE_HOLDINGS, UI } from "./constants";
+
+function matchesQuery(holding, query) {
+  const q = query.trim().toLowerCase();
+  if (!q) return true;
+
+  return (
+    holding.investor.toLowerCase().includes(q) ||
+    holding.ticker.toLowerCase().includes(q)
+  );
+}
 
 export default function App() {
   const [query, setQuery] = useState("");
+  const [selected, setSelected] = useState(null);
 
-  const filtered = useMemo(() => {
-    if (!query) return SAMPLE_HOLDINGS;
+  const filtered = useMemo(
+    () => SAMPLE_HOLDINGS.filter((h) => matchesQuery(h, query)),
+    [query]
+  );
 
-    const q = query.toLowerCase();
-    return SAMPLE_HOLDINGS.filter(
-      (x) =>
-        x.investor.toLowerCase().includes(q) ||
-        x.ticker.toLowerCase().includes(q)
-    );
-  }, [query]);
+  function handleSearch(nextQuery) {
+    setQuery(nextQuery);
+    setSelected(null);
+  }
 
   return (
-    <div style={{ textAlign: "center", marginTop: UI.PAGE_MARGIN_TOP }}>
-      <h1>Welcome to InvestTrack</h1>
-      <p>A learning tool to follow investors and market trends</p>
+    <>
+      <NavBar />
+      <div style={{ textAlign: "center", marginTop: UI.PAGE_MARGIN_TOP }}>
+        <h1>Welcome to InvestTrack</h1>
+        <p>A learning tool to follow investors and market trends</p>
 
-      <SearchBar onSearch={setQuery} />
-      <Results items={filtered} />
-    </div>
+        <SearchBar onSearch={handleSearch} />
+
+        <Results items={filtered} onSelect={setSelected} />
+        <HoldingDetails holding={selected} />
+      </div>
+    </>
   );
 }
