@@ -51,32 +51,23 @@ export default function Results({ items, selectedKey, onSelect }) {
       <p style={muted}>Click a row to view details.</p>
 
       <ul style={list}>
-        {items.map((x) => {
-          const key = `${x.investor}-${x.ticker}`;
-          const isSelected = key === selectedKey;
+        {items.map((h) => {
+  const key = `${h.investor}-${h.ticker}`;
+  const isSelected = selectedKey === key;
 
-          const row = {
-            ...rowBase,
-            outline: isSelected ? "2px solid rgba(0,180,255,0.55)" : "none",
-            background: isSelected ? "rgba(0,180,255,0.10)" : rowBase.background,
-          };
-
-          return (
-            <li key={key} style={row} onClick={() => onSelect(x)}>
-              <div>
-                <div style={{ fontWeight: 800 }}>{x.investor}</div>
-                <div style={{ color: UI.TEXT_MUTED }}>{x.ticker}</div>
-              </div>
-
-              <div style={{ fontWeight: 800 }}>
-                {x.shares.toLocaleString()} shares
-              </div>
-            </li>
-          );
-        })}
-      </ul>
-    </div>
+  return (
+    <li
+      key={key}
+      style={{
+        ...rowBase,
+        outline: isSelected ? "2px solid rgba(0,180,255,0.55)" : "none",
+      }}
+      onClick={() => onSelect(h)}
+    >
+      <div>
+        <strong>{h.investor}</strong> — {h.ticker}
+      </div>
+      <div>{h.shares.toLocaleString()} shares</div>
+    </li>
   );
-}
-
-
+})}
