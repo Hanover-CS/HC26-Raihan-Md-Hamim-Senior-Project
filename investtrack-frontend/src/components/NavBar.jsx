@@ -1,19 +1,42 @@
 /**
  * File: NavBar.jsx
- * Purpose: Top navigation bar that provides links to the main routes.
+ * Purpose: Top navigation bar linking to main routes.
  */
 
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { ROUTES, UI } from "../constants";
 
-export default function NavBar() {
-  const linkStyle = { color: UI.LINK_COLOR, margin: UI.LINK_MARGIN };
+function navLinkStyle({ isActive }) {
+  return {
+    padding: "10px 12px",
+    borderRadius: 12,
+    border: "1px solid rgba(255,255,255,0.12)",
+    background: isActive ? "rgba(255,255,255,0.08)" : "rgba(0,0,0,0.20)",
+  };
+}
 
+export default function NavBar() {
   return (
-    <nav style={{ background: UI.NAV_BG, padding: UI.NAV_PADDING }}>
-      <Link style={linkStyle} to={ROUTES.HOME}>Home</Link>
-      <Link style={linkStyle} to={ROUTES.PROPOSAL}>Proposal</Link>
-      <Link style={linkStyle} to={ROUTES.ANNOTATED}>Annotated Bibliography</Link>
-    </nav>
+    <div style={{ borderBottom: "1px solid rgba(255,255,255,0.10)" }}>
+      <div className="container" style={{ paddingTop: 14, paddingBottom: 14 }}>
+        <div className="row" style={{ justifyContent: "space-between" }}>
+          <Link to={ROUTES.HOME} style={{ fontWeight: 700, letterSpacing: "-0.01em" }}>
+            {UI.APP_NAME}
+          </Link>
+
+          <div className="row">
+            <NavLink to={ROUTES.HOME} style={navLinkStyle}>
+              Home
+            </NavLink>
+            <NavLink to={ROUTES.PROPOSAL} style={navLinkStyle}>
+              Proposal
+            </NavLink>
+            <NavLink to={ROUTES.ANNOTATED} style={navLinkStyle}>
+              Annotated Bibliography
+            </NavLink>
+          </div>
+        </div>
+      </div>
+    </div>
   );
 }
