@@ -19,6 +19,7 @@ export const UI = {
   SPACING_8: "8px",
   SPACING_10: "10px",
   SPACING_20: "20px",
+  SORT_MARGIN_TOP: "10px",
 };
 
 const RAW_SAMPLE_HOLDINGS = [
@@ -34,5 +35,6 @@ export const SORT = {
   TICKER_AZ: "TICKER_AZ",
   SHARES_DESC: "SHARES_DESC",
 };
+
 
 
