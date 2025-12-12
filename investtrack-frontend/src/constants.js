@@ -2,7 +2,7 @@
  * File: constants.js
  * Purpose: Central place for shared constants to avoid magic values and duplication.
  */
-
+import Holding from "./models/Holding";
 export const ROUTES = {
   HOME: "/",
   PROPOSAL: "/proposal",
@@ -21,10 +21,12 @@ export const UI = {
   SPACING_20: "20px",
 };
 
-export const SAMPLE_HOLDINGS = [
+const RAW_SAMPLE_HOLDINGS = [
   { investor: "Berkshire Hathaway", ticker: "AAPL", shares: 915000000 },
   { investor: "Berkshire Hathaway", ticker: "KO", shares: 400000000 },
   { investor: "Vanguard", ticker: "MSFT", shares: 600000000 },
   { investor: "BlackRock", ticker: "NVDA", shares: 250000000 },
 ];
+
+export const SAMPLE_HOLDINGS = RAW_SAMPLE_HOLDINGS.map((x) => new Holding(x));
 
