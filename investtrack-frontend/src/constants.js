@@ -29,4 +29,10 @@ const RAW_SAMPLE_HOLDINGS = [
 ];
 
 export const SAMPLE_HOLDINGS = RAW_SAMPLE_HOLDINGS.map((x) => new Holding(x));
+export const SORT = {
+  INVESTOR_AZ: "INVESTOR_AZ",
+  TICKER_AZ: "TICKER_AZ",
+  SHARES_DESC: "SHARES_DESC",
+};
+
 
