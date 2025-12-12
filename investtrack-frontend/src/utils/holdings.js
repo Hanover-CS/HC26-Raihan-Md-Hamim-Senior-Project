@@ -25,3 +25,25 @@ export function sortHoldings(holdings, sortMode) {
 
   return copy;
 }
+// src/utils/holdings.js
+
+const FAVORITES_KEY = "investtrack:favorites";
+
+// returns a Set of favorite keys
+export function loadFavorites() {
+  try {
+    const raw = localStorage.getItem(FAVORITES_KEY);
+    if (!raw) return new Set();
+    const arr = JSON.parse(raw);
+    if (!Array.isArray(arr)) return new Set();
+    return new Set(arr);
+  } catch {
+    return new Set();
+  }
+}
+
+// accepts a Set or Array of keys and saves it
+export function saveFavorites(favs) {
+  const arr = Array.isArray(favs) ? favs : Array.from(favs ?? []);
+  localStorage.setItem(FAVORITES_KEY, JSON.stringify(arr));
+}
