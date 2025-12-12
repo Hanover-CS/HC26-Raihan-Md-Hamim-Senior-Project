@@ -1,34 +1,44 @@
 /**
  * File: SearchBar.jsx
- * Purpose: Collects user input and triggers a search via onSearch callback.
+ * Purpose: Search UI that calls onSearch with trimmed text and supports clear.
  */
 
 import { useState } from "react";
 import { UI } from "../constants";
 
 export default function SearchBar({ onSearch }) {
-  const [query, setQuery] = useState("");
+  const [text, setText] = useState("");
 
-  function handleSubmit(event) {
-    event.preventDefault();
-    const trimmed = query.trim();
-    onSearch(trimmed);
+  function submit() {
+    onSearch(text.trim());
+  }
+
+  function clear() {
+    setText("");
+    onSearch("");
+  }
+
+  function onKeyDown(e) {
+    if (e.key === "Enter") submit();
   }
 
   return (
-    <form onSubmit={handleSubmit} style={{ marginTop: UI.SPACING_20 }}>
+    <div className="row" style={{ marginTop: 14 }}>
       <input
-        value={query}
-        onChange={(e) => setQuery(e.target.value)}
-        placeholder="Search investor or ticker"
-        style={{ padding: UI.SPACING_8, width: UI.SEARCH_INPUT_WIDTH }}
+        className="input"
+        placeholder={UI.SEARCH_PLACEHOLDER}
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+        onKeyDown={onKeyDown}
       />
-      <button
-        type="submit"
-        style={{ marginLeft: UI.SPACING_10, padding: `${UI.SPACING_8} 12px` }}
-      >
+
+      <button className="btn btnPrimary" onClick={submit}>
         Search
       </button>
-    </form>
+
+      <button className="btn" onClick={clear} aria-label="Clear search">
+        Clear
+      </button>
+    </div>
   );
 }
