@@ -52,22 +52,27 @@ export default function Results({ items, selectedKey, onSelect }) {
 
       <ul style={list}>
         {items.map((h) => {
-  const key = `${h.investor}-${h.ticker}`;
-  const isSelected = selectedKey === key;
+          const key = `${h.investor}-${h.ticker}`;
+          const isSelected = selectedKey === key;
 
-  return (
-    <li
-      key={key}
-      style={{
-        ...rowBase,
-        outline: isSelected ? "2px solid rgba(0,180,255,0.55)" : "none",
-      }}
-      onClick={() => onSelect(h)}
-    >
-      <div>
-        <strong>{h.investor}</strong> — {h.ticker}
-      </div>
-      <div>{h.shares.toLocaleString()} shares</div>
-    </li>
+          return (
+            <li
+              key={key}
+              style={{
+                ...rowBase,
+                outline: isSelected ? "2px solid rgba(0,180,255,0.55)" : "none",
+              }}
+              onClick={() => (onSelect ? onSelect(h) : null)}
+            >
+              <div>
+                <strong>{h.investor}</strong> — {h.ticker}
+              </div>
+              <div>{Number(h.shares).toLocaleString()} shares</div>
+            </li>
+          );
+        })}
+      </ul>
+    </div>
   );
-})}
+}
+
