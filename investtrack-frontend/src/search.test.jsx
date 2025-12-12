@@ -1,7 +1,3 @@
-/**
- * File: search.test.jsx
- * Purpose: Tests for SearchBar + Results (matches current UI + Holding model).
- */
 import { describe, it, expect } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
 
@@ -15,7 +11,6 @@ describe("SearchBar", () => {
 
     render(<SearchBar onSearch={(q) => (last = q)} />);
 
-    // Your placeholder has extra text, so use regex:
     const input = screen.getByPlaceholderText(/Search investor or ticker/i);
 
     fireEvent.change(input, { target: { value: "  aapl  " } });
@@ -29,15 +24,16 @@ describe("Results", () => {
   it("shows No results when list is empty", () => {
     render(<Results items={[]} />);
 
-    // Your UI says: "No results. Try a different investor or ticker."
-    expect(
-      screen.getByText(/No results\./i)
-    ).toBeTruthy();
+    expect(screen.getByText(/No results\./i)).toBeTruthy();
   });
 
   it("renders an item when provided", () => {
     const items = [
-      new Holding({ investor: "Test Fund", ticker: "TSLA", shares: 123 }),
+      new Holding({
+        investor: "Test Fund",
+        ticker: "TSLA",
+        shares: 123,
+      }),
     ];
 
     render(<Results items={items} />);
