@@ -9,3 +9,8 @@ export default defineConfig({
     globals: true,           // <-- add this line
   },
 })
+export default {
+  server: {
+    hmr: false,
+  },
+};
