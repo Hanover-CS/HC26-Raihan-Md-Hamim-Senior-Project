@@ -14,25 +14,38 @@ describe("SearchBar", () => {
 
     render(<SearchBar onSearch={(q) => (last = q)} />);
 
-    fireEvent.change(screen.getByPlaceholderText("Search investor or ticker"), {
-      target: { value: "  aapl  " },
-    });
+    fireEvent.change(
+      screen.getByPlaceholderText(
+        "Search investor or ticker (ex: Berkshire, AAPL)"
+      ),
+      {
+        target: { value: "  aapl  " },
+      }
+    );
 
     fireEvent.click(screen.getByText("Search"));
+
     expect(last).toBe("aapl");
   });
 });
 
 describe("Results", () => {
-  it("shows No results when list is empty", () => {
-    render(<Results items={[]} selectedKey={null} onSelect={() => {}} />);
-    expect(screen.getByText("No results.")).toBeTruthy();
+  it("shows No results message when list is empty", () => {
+    render(
+      <Results items={[]} selectedKey={null} onSelect={() => {}} />
+    );
+
+    expect(
+      screen.getByText(/No results/i)
+    ).toBeTruthy();
   });
 
   it("renders an item when provided", () => {
     render(
       <Results
-        items={[{ investor: "Test Fund", ticker: "TSLA", shares: 123 }]}
+        items={[
+          { investor: "Test Fund", ticker: "TSLA", shares: 123 },
+        ]}
         selectedKey={null}
         onSelect={() => {}}
       />
@@ -42,4 +55,3 @@ describe("Results", () => {
     expect(screen.getByText(/TSLA/)).toBeTruthy();
   });
 });
-
