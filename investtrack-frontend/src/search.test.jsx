@@ -2,15 +2,16 @@
  * File: search.test.jsx
  * Purpose: Automated tests for search UI behavior and results rendering.
  */
-
 import { describe, it, expect } from "vitest";
 import { render, screen, fireEvent } from "@testing-library/react";
+
 import SearchBar from "./components/SearchBar";
 import Results from "./components/Results";
 
 describe("SearchBar", () => {
   it("calls onSearch with trimmed query", () => {
     let last = null;
+
     render(<SearchBar onSearch={(q) => (last = q)} />);
 
     fireEvent.change(screen.getByPlaceholderText("Search investor or ticker"), {
@@ -24,7 +25,7 @@ describe("SearchBar", () => {
 
 describe("Results", () => {
   it("shows No results when list is empty", () => {
-    render(<Results items={[]} />);
+    render(<Results items={[]} selectedKey={null} onSelect={() => {}} />);
     expect(screen.getByText("No results.")).toBeTruthy();
   });
 
@@ -32,6 +33,8 @@ describe("Results", () => {
     render(
       <Results
         items={[{ investor: "Test Fund", ticker: "TSLA", shares: 123 }]}
+        selectedKey={null}
+        onSelect={() => {}}
       />
     );
 
@@ -39,3 +42,4 @@ describe("Results", () => {
     expect(screen.getByText(/TSLA/)).toBeTruthy();
   });
 });
+
