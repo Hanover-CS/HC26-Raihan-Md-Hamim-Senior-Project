@@ -1,6 +1,6 @@
 /**
  * File: holdings.js
- * Purpose: Filtering and sorting helpers for holdings.
+ * Purpose: Filtering and sorting helpers for holdings + favorites helpers.
  */
 
 export function filterHoldings(holdings, query) {
@@ -15,35 +15,27 @@ export function sortHoldings(holdings, sortMode) {
 
   const copy = [...holdings];
 
-  if (sortMode === "SHARES_DESC") {
-    copy.sort((a, b) => b.shares - a.shares);
-  }
-
-  if (sortMode === "SHARES_ASC") {
-    copy.sort((a, b) => a.shares - b.shares);
-  }
+  if (sortMode === "SHARES_DESC") copy.sort((a, b) => b.shares - a.shares);
+  if (sortMode === "SHARES_ASC") copy.sort((a, b) => a.shares - b.shares);
 
   return copy;
 }
-// src/utils/holdings.js
 
 const FAVORITES_KEY = "investtrack:favorites";
 
-// returns a Set of favorite keys
 export function loadFavorites() {
   try {
     const raw = localStorage.getItem(FAVORITES_KEY);
     if (!raw) return new Set();
     const arr = JSON.parse(raw);
-    if (!Array.isArray(arr)) return new Set();
-    return new Set(arr);
+    return Array.isArray(arr) ? new Set(arr) : new Set();
   } catch {
     return new Set();
   }
 }
 
-// accepts a Set or Array of keys and saves it
 export function saveFavorites(favs) {
   const arr = Array.isArray(favs) ? favs : Array.from(favs ?? []);
   localStorage.setItem(FAVORITES_KEY, JSON.stringify(arr));
 }
+
