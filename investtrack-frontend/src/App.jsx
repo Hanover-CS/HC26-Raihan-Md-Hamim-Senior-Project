@@ -1,3 +1,5 @@
+import { loadFavorites, saveFavorites, filterHoldings, sortHoldings } from "./utils/holdings.js";
+
 export default function App() {
   return (
     <div
