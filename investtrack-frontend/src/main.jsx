@@ -2,11 +2,11 @@
  * File: main.jsx
  * Purpose: Application entry point and route configuration.
  */
-
+import "./index.css";
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import "./index.css";
+
 
 import NavBar from "./components/NavBar";
 import App from "./App";
