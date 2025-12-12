@@ -1,4 +1,5 @@
 import { Routes, Route } from "react-router-dom";
+import NavBar from "./components/NavBar";
 
 import Home from "./pages/Home";
 import Proposal from "./pages/Proposal";
@@ -12,12 +13,8 @@ export default function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/proposal" element={<Proposal />} />
-        <Route
-          path="/annotated-bibliography"
-          element={<AnnotatedBibliography />}
-        />
+        <Route path="/annotated-bibliography" element={<AnnotatedBibliography />} />
       </Routes>
     </>
   );
 }
-
