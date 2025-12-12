@@ -1,29 +1,16 @@
 /**
  * File: SortPicker.jsx
- * Purpose: Dropdown used to select how results should be sorted.
+ * Purpose: Dropdown used to sort results.
  */
 
-import { SORT, UI } from "../constants";
+import { SORT } from "../constants";
 
 export default function SortPicker({ value, onChange }) {
-  function handleChange(e) {
-    onChange(e.target.value);
-  }
-
   return (
-    <div style={{ display: "inline-block", marginTop: UI.SPACING_8 }}>
-      <label style={{ marginRight: UI.SPACING_8 }}>
-        Sort by:
-        <select
-          value={value}
-          onChange={handleChange}
-          style={{ marginLeft: UI.SPACING_8 }}
-        >
-          <option value={SORT.INVESTOR}>Investor (A→Z)</option>
-          <option value={SORT.TICKER}>Ticker (A→Z)</option>
-          <option value={SORT.SHARES}>Shares (High→Low)</option>
-        </select>
-      </label>
-    </div>
+    <select className="select" value={value} onChange={(e) => onChange(e.target.value)}>
+      <option value={SORT.INVESTOR_AZ}>Investor (A→Z)</option>
+      <option value={SORT.TICKER_AZ}>Ticker (A→Z)</option>
+      <option value={SORT.SHARES_DESC}>Shares (High→Low)</option>
+    </select>
   );
 }
