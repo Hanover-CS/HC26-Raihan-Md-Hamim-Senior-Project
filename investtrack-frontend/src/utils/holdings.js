@@ -6,6 +6,7 @@
 export function filterHoldings(holdings, query) {
   const trimmed = (query || "").trim();
   if (!trimmed) return holdings;
+
   return holdings.filter((h) => h.matchesQuery(trimmed));
 }
 
@@ -24,16 +25,24 @@ const FAVORITES_KEY = "investtrack:favorites";
 
 export function loadFavorites() {
   try {
+    // avoid crashing in non-browser environments
+    if (typeof localStorage === "undefined") return new Set();
+
     const raw = localStorage.getItem(FAVORITES_KEY);
     if (!raw) return new Set();
+
     const arr = JSON.parse(raw);
-    return Array.isArray(arr) ? new Set(arr) : new Set();
+    if (!Array.isArray(arr)) return new Set();
+
+    return new Set(arr);
   } catch {
     return new Set();
   }
 }
 
 export function saveFavorites(favs) {
+  if (typeof localStorage === "undefined") return;
+
   const arr = Array.isArray(favs) ? favs : Array.from(favs ?? []);
   localStorage.setItem(FAVORITES_KEY, JSON.stringify(arr));
 }
