@@ -3,14 +3,13 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-
   server: {
-    hmr: false,
-  },
-
-  test: {
-    environment: "jsdom",
-    setupFiles: "./src/test-setup.js",
-    globals: true,
+    proxy: {
+      "/api": {
+        target: "https://financialmodelingprep.com",
+        changeOrigin: true,
+        rewrite: (path) => path.replace(/^\/api/, ""),
+      },
+    },
   },
 });
