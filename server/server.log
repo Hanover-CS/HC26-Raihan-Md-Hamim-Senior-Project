@@ -1,0 +1,27 @@
+
+> investtrack-server@1.0.0 start
+> node index.js
+
+JWT_SECRET loaded: true
+MONGO_URI loaded: true
+MongooseError: The `uri` parameter to `openUri()` must be a string, got "undefined". Make sure the first parameter to `mongoose.connect()` or `mongoose.createConnection()` is a string.
+    at NativeConnection.createClient (/workspaces/HC26-Raihan-Md-Hamim-Senior-Project/server/node_modules/mongoose/lib/drivers/node-mongodb-native/connection.js:230:11)
+    at NativeConnection.openUri (/workspaces/HC26-Raihan-Md-Hamim-Senior-Project/server/node_modules/mongoose/lib/connection.js:1075:34)
+    at Mongoose.connect (/workspaces/HC26-Raihan-Md-Hamim-Senior-Project/server/node_modules/mongoose/lib/mongoose.js:471:15)
+    at file:///workspaces/HC26-Raihan-Md-Hamim-Senior-Project/server/index.js:8:10
+    at ModuleJob.run (node:internal/modules/esm/module_job:329:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)
+Server running on port 5000
+MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout._onTimeout (/workspaces/HC26-Raihan-Md-Hamim-Senior-Project/server/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:131:25)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout._onTimeout (/workspaces/HC26-Raihan-Md-Hamim-Senior-Project/server/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:131:25)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)
+MongooseError: Operation `users.findOne()` buffering timed out after 10000ms
+    at Timeout._onTimeout (/workspaces/HC26-Raihan-Md-Hamim-Senior-Project/server/node_modules/mongoose/lib/drivers/node-mongodb-native/collection.js:131:25)
+    at listOnTimeout (node:internal/timers:588:17)
+    at process.processTimers (node:internal/timers:523:7)

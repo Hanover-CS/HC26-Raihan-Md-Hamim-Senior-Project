@@ -5,10 +5,15 @@ export default defineConfig({
   plugins: [react()],
   server: {
     proxy: {
-      "/api": {
+      "/fmp": {
         target: "https://financialmodelingprep.com",
         changeOrigin: true,
-        rewrite: (path) => path.replace(/^\/api/, ""),
+        secure: true,
+        rewrite: (path) => path.replace(/^\/fmp/, ""),
+      },
+      "/api": {
+        target: "http://localhost:5000",
+        changeOrigin: true,
       },
     },
   },
